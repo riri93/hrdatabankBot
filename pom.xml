@@ -66,6 +66,22 @@
 			<artifactId>line-bot-api-client</artifactId>
 			<version>1.8.0</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/ai.api/libai-base -->
+		<dependency>
+			<groupId>ai.api</groupId>
+			<artifactId>libai-base</artifactId>
+			<version>1.6.12</version>
+			<type>pom</type>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/ai.api/libai -->
+		<dependency>
+			<groupId>ai.api</groupId>
+			<artifactId>libai</artifactId>
+			<version>1.6.12</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
