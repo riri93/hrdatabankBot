@@ -45,12 +45,12 @@ public class EchoApplication {
 				System.err.println(response.getStatus().getErrorDetails());
 			}
 
-			if (response.getResult().getAction() == "weather") {
-				System.out.println(event.getMessage().getText() + ":weather");
-				return new TextMessage(event.getMessage().getText() + ":weather");
+			if (response.getResult().getAction() == "country" || response.getResult().getAction().equals("country")) {
+				System.out.println(event.getMessage().getText() + " : country");
+				return new TextMessage(event.getMessage().getText() + " : country");
 			} else {
-				System.err.println(event.getMessage().getText() + ":NOT-weather");
-				return new TextMessage(event.getMessage().getText() + ":NOT-weather");
+				System.err.println(event.getMessage().getText() + " : NOT-country");
+				return new TextMessage(event.getMessage().getText() + " : NOT-country");
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
